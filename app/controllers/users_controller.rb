@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   private
 
   def user_params 
-    # ストロングパラメーターを使用し、user_paramsを定義します。
+    # ストロングパラメーターを使用し、user_paramsを定義。
     params.require(:user).permit(:name, :email)
     # user_paramsの中でpermitメソッドを使用し、「name」と「email」の編集を許可
   end
